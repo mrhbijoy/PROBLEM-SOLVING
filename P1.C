@@ -1,7 +1,10 @@
-// write Hello World! in c
-#include <stdio.h>
+//taking input a charecter and printing it
+#include<stdio.h>
 int main()
 {
-    printf("Hello World!\n");
-    return 0;
+char ch;
+printf("Enter a charecter");
+scanf("%c",&ch);
+printf("The charecter is %c",ch);
+return 0;
 }
