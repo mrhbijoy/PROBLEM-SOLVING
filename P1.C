@@ -1,10 +1,20 @@
-//taking input a charecter and printing it
 #include<stdio.h>
 int main()
 {
-char ch;
-printf("Enter a charecter");
-scanf("%c",&ch);
-printf("The charecter is %c",ch);
+int a[5],i,min;
+printf("Enter the elements of the array");
+for(i=0;i<5;i++)
+{
+scanf("%d",&a[i]);
+}
+min=a[0];
+for(i=0;i<5;i++)
+{
+if(a[i]<min)
+{
+min=a[i];
+}
+}
+printf("The minimum value of the array is %d",min);
 return 0;
 }
